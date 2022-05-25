@@ -2,7 +2,7 @@
 
 This project is based on the data provided by [Agify](https://agify.io/) on the mean age of people carrying a certain name.
 
-**You can try it out on [GitHub Pages]().**
+**You can try it out on [GitHub Pages](https://mem96.github.io/aging-like-names/).**
 
 I engaged in this project for at least two reasons:
 
@@ -28,3 +28,5 @@ The assets included are:
 * *Background image* by [Andrew Ridley](https://unsplash.com/@aridley88) on Unsplash.
 * *Fonts* by [Angie Durbin](https://www.dafont.com/it/angie-durbin.d2991) -general font- and [Bangkit Tri Setiadi](https://www.dafont.com/it/bangkit-tri-setiadi.d7030) -title- on DaFont.
 * *Favicon*, self-made as usual.
+
+I also used [Prettier](https://prettier.io/) to make the code look better.
