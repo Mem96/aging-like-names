@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Aging like fine Names</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div id="header">
+        <h1>Aging like fine Names</h1>
+        <p v-text="generalDescription"></p>
+      </div>
+
+      <form @submit.prevent="searchName">
+        <div>
+          <label for="countrySelect">Choose a country :</label>
+          <select id="countrySelect" @change="defineCountry">
+            <option value="any" selected>Any country</option>
+            <option v-for="(country, value) in countryOptions" :value="value">
+              {{country}}
+            </option>
+          </select>
+        </div>
+        <div :class="['nameSelection']">
+          <label for="nameBar">Look for a name :</label>
+          <input
+            type="text"
+            id="nameBar"
+            ref="nameBar"
+            v-model="searchedName"
+            @focus="hideResult"
+          />
+          <button type="button" name="button" @click.prevent="searchName">
+            Search
+          </button>
+        </div>
+      </form>
+      <p v-show="error" v-html="errorMessage"></p>
+      <div id="results" v-show="showResult">
+        <h2>{{searchedName}}</h2>
+        <p><b>Age :</b> {{age}}</p>
+        <p id="peopleCount">Based on {{count}} people with this name.</p>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script/app.js"></script>
+  </body>
+</html>

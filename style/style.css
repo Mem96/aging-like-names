@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "Hello-Valentina";
+  src: url("Hello-Valentina.ttf");
+}
+@font-face {
+  font-family: "Angelina";
+  src: url("Angelina.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Angelina";
+  font-size: 30px;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  color: rgb(3, 3, 59);
+}
+
+body {
+  background-image: url("background.jpg");
+  background-size: cover;
+}
+
+#main {
+  margin: auto;
+  text-align: center;
+  user-select: none;
+}
+
+h1,
+h2 {
+  font-family: "Hello-Valentina";
+  font-weight: normal;
+}
+
+#header {
+  background-color: rgba(255, 255, 255, 0.6);
+  margin: auto;
+  max-width: 90vw;
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 80px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: rgb(127, 83, 127);
+}
+
+label {
+  word-spacing: 2px;
+  font-weight: bold;
+}
+
+label[for="countrySelect"] {
+  font-size: 25px;
+}
+
+select {
+  text-align: center;
+  margin: 30px;
+  margin-left: 0px;
+  font-size: 25px;
+  color: rgb(3, 3, 59);
+  background-color: rgb(231, 211, 228);
+  border: solid 3px white;
+  border-radius: 15px;
+}
+
+input {
+  text-align: center;
+  color: rgb(3, 3, 59);
+  border: solid 3px rgb(200, 242, 246);
+  border-radius: 5px;
+  width: 200px;
+}
+
+button {
+  border-radius: 15px;
+  padding: 3px 15px 0px 18px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: rgb(200, 242, 246);
+  border: none;
+  box-shadow: 2px 2px 0 0;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: rgb(229, 250, 252);
+}
+
+button:active {
+  box-shadow: none;
+}
+
+#results {
+  border: solid rgb(231, 211, 228) 2px;
+  border-radius: 15px;
+  max-width: 650px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+h2 {
+  font-size: 60px;
+  text-transform: capitalize;
+  color: rgb(127, 83, 127);
+}
+
+#peopleCount {
+  font-size: 20px;
+  margin-top: 30px;
+  color: rgb(127, 83, 127);
+}
