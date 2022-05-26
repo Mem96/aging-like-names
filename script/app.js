@@ -38,6 +38,8 @@ new Vue({
       this.$refs.nameBar.blur();
       this.error = false;
 
+      this.searchedName = this.searchedName.replace(' ', '-');
+
       if (this.searchedName == undefined || this.searchedName == "") {
         return;
       } else {
